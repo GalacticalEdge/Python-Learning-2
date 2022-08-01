@@ -89,3 +89,26 @@ if "expensive" not in txt:
   print("No, 'expensive' is not present in the variable 'txt'.") # But again, we can tell it to print something we want if the word "expensive" is not present
 
 # Left off on Python Slicing Strings 
+
+o = "Octopus" 
+oo = " Octopus "
+ooo = "Octopus,wins"
+print(o[3:5]) # This will print out the letters between the third and fifth letters in o
+
+print(o[:5]) # This will print up to the fifth letter in o
+
+print(o[2:]) # This will print whatever is after the second letter in o
+
+print(o[-5:-2]) # IDK how to describe this
+
+print(o.upper()) # This will print o, but completely uppercase
+
+print(o.lower()) # This will print o, but completely lowercase
+
+print(oo.strip()) # This removes any whitespace at the beginning or end
+
+print(o.replace("O", "0")) # This will replace the O in "Octopus" with a zero
+
+print(ooo.split(",")) # This will create a split between the coma and the word "wins"
+
+# Left off on Python Format Strings
