@@ -112,3 +112,20 @@ print(o.replace("O", "0")) # This will replace the O in "Octopus" with a zero
 print(ooo.split(",")) # This will create a split between the coma and the word "wins"
 
 # Left off on Python Format Strings
+
+sales = "Our product sold {} units"
+salesnum = 700000
+
+print(sales.format(salesnum)) # This will have the "{}" show the "salesnum"
+
+place1 = "Japan"
+place2 = "Italy"
+place3 = "Eygpt"
+
+visitplaces = "I want to visit {}, {}, and {}"
+
+print(visitplaces.format(place1, place2, place3)) # But we can also add multiple variables to format strings
+
+print("He was a so-called \"hacker\" who saved the world") # When using for example double quotes, it conflicts with the double quotes that are already in the string. To fix that, you name to add "\" (Escape characters) to the double quotation marks inside like shown in the code
+
+# Left off on Python Booleans
