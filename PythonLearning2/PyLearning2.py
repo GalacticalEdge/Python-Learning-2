@@ -114,7 +114,7 @@ print(ooo.split(",")) # This will create a split between the coma and the word "
 # Left off on Python Format Strings
 
 sales = "Our product sold {} units"
-salesnum = 700000
+salesnum = "700,000"
 
 print(sales.format(salesnum)) # This will have the "{}" show the "salesnum"
 
@@ -126,6 +126,21 @@ visitplaces = "I want to visit {}, {}, and {}"
 
 print(visitplaces.format(place1, place2, place3)) # But we can also add multiple variables to format strings
 
-print("He was a so-called \"hacker\" who saved the world") # When using for example double quotes, it conflicts with the double quotes that are already in the string. To fix that, you name to add "\" (Escape characters) to the double quotation marks inside like shown in the code
+print("He was a so-called \"hero\" who saved the world") # When using for example double quotes, it conflicts with the double quotes that are already in the string. To fix that, you name to add \"Quote here\" (Escape characters) to the double quotation marks inside like shown in the code
 
 # Left off on Python Booleans
+
+print(300 > 600) # This will compare the values of the two variables and will report if the result is true or false
+
+tt = 89
+rr = 212
+
+if tt < rr:
+    print("tt is less than rr") # This will appear if the result is true
+else:
+    print("tt is not less than rr") # This will appear if the result is false
+
+print(bool("Hello")) # These booleans allows us to evaluate any value, and give a true or false in return
+print(bool(rr)) # And to let you know, most values are true except for the number 0, "None" and empty values (Such as (), {}, etc.)
+
+# Left off on Python Operators
