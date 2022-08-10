@@ -171,7 +171,7 @@ print(grocerylist)
 grocerylist.append("Meat") # Another method that is useful when you don't need to add something into a specific order is using the "append" method. It adds the item at the end of the list
 print(grocerylist)
 
-grocerylist.insert(1, "Cherry") # This command will change the item in the listed order.
+grocerylist.insert(1, "Cherry") # This command will insert the item in the listed order.
 print(grocerylist)
 
 clothes = ["Pants", "Shirts", "Socks"]
@@ -180,3 +180,42 @@ grocerylist.extend(clothes) # This will combine the "grocerylist" and "clothes" 
 print(grocerylist)
 
 # Left off on Python Remove List Items
+
+grocerylist.remove("Socks") # This will remove the item you type in to be removed
+print(grocerylist)
+
+grocerylist.pop(5) # Another way to remove an item from a list is by using 'pop' to remove an item by what order it is in.
+print(grocerylist)
+
+grocerylist.pop() # But 'pop' alone will delete the last item on the list
+print(grocerylist)
+
+del grocerylist[0] # The 'del' command can be used to delete certain items from a list based on it's order in the list.
+print(grocerylist)
+
+del clothes # But adding a 'del' command without specifying which item you want delete will remove the whole list. This will result in errors if you try to call this list later.
+
+dellist = ["Mana", "Karma", "Sandbox"]
+dellist.clear() # A more proper way to delete lists are through clear. The list still exists, but has no contents in it.
+print(dellist)
+
+for x in grocerylist: # A way to print lists vertically is through loops, which will print the list, one by one
+    print(x)
+
+print("Here is something to seperate the two")
+
+for i in range(len(grocerylist)): # This is how we can print items by referring to their index number
+  print(grocerylist[i])
+
+print("Here is something to seperate the two")
+
+z = 3
+while z < len(grocerylist): # Print all items, using a while loop to go through all the index numbers
+    print(grocerylist[z])
+    z = z + 1
+
+print("Here is something to seperate the two")
+
+[print(z) for z in grocerylist] # A short hand for loop that will print all items in a list
+
+# Left off on Python List Comprehension
