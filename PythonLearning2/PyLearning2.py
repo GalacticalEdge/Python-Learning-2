@@ -144,3 +144,39 @@ print(bool("Hello")) # These booleans allows us to evaluate any value, and give 
 print(bool(rr)) # And to let you know, most values are true except for the number 0, "None" and empty values (Such as (), {}, etc.)
 
 # Left off on Python Operators
+
+grocerylist = ["Apple", "Juice", "Bread"]
+print(grocerylist) # This will print out the "list"
+print(len(grocerylist)) # This will tell us how many items are in the "list"
+print(grocerylist[1]) # This will show the item that the listed variable. The order usually starts with 0, so adding "0" here would have gotten us "Apple"
+print(grocerylist[-1]) # This will do the same thing as the previous command, but it will do it in the opposite way.
+print(grocerylist[1:3]) # This will specify the range we want to list.
+print(grocerylist[:2]) # This will specify that we want to list up to the second item in the list.
+print(grocerylist[2:]) # This will list items that come after the one we listed in this command
+if "Juice" in grocerylist: # We can also check for specific items in lists
+    print("We have juice in this list")
+
+grocerylist[1] = "Orange" # We can also change certain items in a list (and they presist)
+print(grocerylist)
+
+grocerylist[0:2] = ["Kiwi", "Yogurt"] # It's also possible to change multiple items in a list
+print(grocerylist)
+
+grocerylist[1:2] = ["Cereal", "Water"] # If you add more items than you replace, it will be added into the list
+print(grocerylist)
+
+grocerylist.insert(2, "Watermelon") # A another (and better) way of adding items into the list is by inserting items, and best of all, you can specify the order.
+print(grocerylist)
+
+grocerylist.append("Meat") # Another method that is useful when you don't need to add something into a specific order is using the "append" method. It adds the item at the end of the list
+print(grocerylist)
+
+grocerylist.insert(1, "Cherry") # This command will change the item in the listed order.
+print(grocerylist)
+
+clothes = ["Pants", "Shirts", "Socks"]
+
+grocerylist.extend(clothes) # This will combine the "grocerylist" and "clothes" variables
+print(grocerylist)
+
+# Left off on Python Remove List Items
