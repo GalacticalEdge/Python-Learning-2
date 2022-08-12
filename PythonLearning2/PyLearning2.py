@@ -51,6 +51,7 @@ print(type(x))
 print(type(y))
 print(type(z))
 
+from queue import Empty
 import random
 
 print(random.randrange(1, 10))
@@ -219,3 +220,35 @@ print("Here is something to seperate the two")
 [print(z) for z in grocerylist] # A short hand for loop that will print all items in a list
 
 # Left off on Python List Comprehension
+
+cities = ["New York", "Tokyo", "Lima", "Cairo", "Paris", "Syndey"]
+emplst = []
+
+for lp in cities: # This can be used so the list only prints out items that contain an "o" in it
+    if "o" in lp:
+        emplst.append(lp)
+
+print(emplst)
+
+eplst2 = [ip for ip in cities if "o" in ip] # But a more efficient way of doing this is using this
+print(eplst2)
+
+emplst3 = [kp for kp in cities if kp !="Tokyo"] # This list will tell us to exclude certain words, such as "Tokyo" in this case
+print(emplst3)
+
+emplst4 = [hp for hp in range(10)] # This will list the first 10 numbers, starting with 0
+print(emplst4)
+
+emplst5 = [gp for gp in range(10) if gp < 5] # This will only print up to the first 5 numbers, even though we are asking for 10 (And once again, it will start with 0)
+print(emplst5)
+
+emplst6 = [fp.upper() for fp in cities] # Here, we just made all words fully uppercase
+print(emplst6)
+
+emplst7 = ['Rome' for dp in cities] # This one will replace everything in the list with "Rome"
+print(emplst7)
+
+emplst8 = [sp if sp !="New York" else "Los Angeles" for sp in cities] # Here, we are replacing "New York" with "Los Angeles"
+print(emplst8)
+
+# Left off on Python Sort Lists
