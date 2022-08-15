@@ -252,3 +252,28 @@ emplst8 = [sp if sp !="New York" else "Los Angeles" for sp in cities] # Here, we
 print(emplst8)
 
 # Left off on Python Sort Lists
+
+cities.sort() # This will sort out the "cities" list in alphabetical order
+print(cities) 
+
+ordnums = [65, 234, 45, 10, 345]
+ordnums.sort() # The sorting feature can also be used to order numbers
+print(ordnums)
+
+cities.sort(reverse = True) # It's also possible to have lists be sorted in reverse order
+print(cities)
+
+ordnums.sort(reverse = True) # Same can be done for numbers, have the numbers be sorted in reverse order
+print(ordnums) 
+
+def myfunc(n):
+    return abs(n - 50) # It's also possible to sort numbers based on how close they are to the number 50
+ 
+ordnums.sort(key = myfunc) 
+print(ordnums)
+
+cities.sort(key = str.lower) # Normally, lists are case sensitive, but this can be used to make them not case sensitive
+print(cities)
+
+cities.reverse() # This can be used to make a list go in reverse
+print(cities)
