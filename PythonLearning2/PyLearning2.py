@@ -1,12 +1,11 @@
 if 14 > 13.5:
-    print("14 is greater than 13.5")
+    print("14 is greater than 13.5") # This will tell you which number is greater
 
 x = 5
-x = "lifes left"
 y = 3.545453
-z = 1j
+z = 1           # These are variables (in this cases, these are str, which is short for string)
 
-print(x)
+print(x) # This will print out x, which is 5
 
 # Left off on Python Variable Names
 
@@ -14,34 +13,26 @@ myvariable = "Joey"
 
 print(myvariable)
 
-print("Here are some grouped value")
-
-ac, bc, cc = "Soda", "Juice", "Water"
+ac, bc, cc = "Soda", "Juice", "Water" # This is a grouped variable
 
 print(ac)
 print(bc)
 print(cc)
 
-print("Here is an unpacked collection")
-
-colors = ["red", "orange", "yellow"]
+colors = ["red", "orange", "yellow"] # This is an unpacked collection
 aa, ab, ac = colors
 print(aa)
 print(ab)
 print(ac)
 
-print("Here are some output variables")
-
 zx = "Python"
 zy = "is"
 zz = "life"
-print(zx, zy, zz)
-
-print("Here is a global variable")
+print(zx, zy, zz) # These are output variables
 
 rr = " cool"
 
-def myfunc():
+def myfunc(): # This is a global variable
     print("Python is" + rr)
 myfunc()
 
@@ -52,7 +43,7 @@ print(type(y))
 print(type(z))
 
 from queue import Empty
-import random
+import random # This will import a Python module, which is "random" in this case
 
 print(random.randrange(1, 10))
 
